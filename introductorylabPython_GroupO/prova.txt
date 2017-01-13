@@ -1,0 +1,3 @@
+This is the first lab working with Python.
+The objective is the right configuration of the programming
+and development environment
