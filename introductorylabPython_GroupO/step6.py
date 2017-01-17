@@ -10,6 +10,6 @@ try:
         counter += 1
         print lineC
         newFile.write(lineC)
-        newFile.close()
+    newFile.close()
 except IOError:
     print "File not found"
