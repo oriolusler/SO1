@@ -7,5 +7,6 @@ try:
         print(line)
         newFile.write(str(len(line) - 1) + " " + line)
     fileOpen.close()
+    newFile.close()
 except IOError:
     print"File not found"

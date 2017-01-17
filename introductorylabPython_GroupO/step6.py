@@ -1,6 +1,6 @@
 name = raw_input("Name: ")
 try:
-    newName = raw_input("Name out file: ")
+    newName = raw_input("Output file name: ")
     newFile = open(newName + ".txt", "w")
     counter = 0
     with open(name + '.txt') as f:
@@ -10,5 +10,6 @@ try:
         counter += 1
         print lineC
         newFile.write(lineC)
+        newFile.close()
 except IOError:
     print "File not found"

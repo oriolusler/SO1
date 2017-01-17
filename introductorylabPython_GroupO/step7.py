@@ -16,6 +16,6 @@ try:
         print s
         newFile.write(s + '\n')
     fileOpen.close()
-
+    newFile.close()
 except IOError:
     print "File not found"
