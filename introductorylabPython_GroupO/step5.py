@@ -4,8 +4,9 @@ try:
     newName = raw_input("Name out file: ")
     newFile = open(newName + ".txt", "w")
     for line in fileOpen:
-        print(line)
-        newFile.write(str(len(line) - 1) + " " + line)
+        finalString=str(len(line) - 1) + " " + line
+        print(finalString)
+        newFile.write(finalString)
     fileOpen.close()
     newFile.close()
 except IOError:
